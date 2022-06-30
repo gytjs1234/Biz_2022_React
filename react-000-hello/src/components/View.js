@@ -8,7 +8,11 @@ props를 통해서 전달받은 변수는 read only이다.
 */
 const view = (props) => {
   const { title } = props;
-  return <div>전달받은 값: {props.title}</div>;
+  return (
+    <div>
+      전달받은 값: {props.title},{title}
+    </div>
+  );
 };
 
 export default view;

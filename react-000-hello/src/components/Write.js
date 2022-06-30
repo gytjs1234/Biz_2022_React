@@ -1,4 +1,5 @@
 import { useState } from "react";
+import View from "./View";
 /*
 react compoment 선언
 */
@@ -13,6 +14,12 @@ Setter에 의해 변수가 변화가 되면 변수값이 표출되는 부분의 
 
   const [title, setTitle] = useState("Korea");
 
+  /*
+  react 에서는 state 로 설정된 변수는 직접 값을 변경할수 없다
+  title ="우리나라"와 같은 코드 금지 state로 설정된 변수는 반드시 같이
+  동반선언된 setter 함수를 통해서 변화를 시켜야한다.
+  */
+
   const onChange = (e) => {
     setTitle(e.target.value);
   };
@@ -20,6 +27,7 @@ Setter에 의해 변수가 변화가 되면 변수값이 표출되는 부분의 
     <form>
       <input name="title" value={title} onChange={onChange} />
       <div>{title}</div>
+      <View title={title} />
     </form>
   );
 };
