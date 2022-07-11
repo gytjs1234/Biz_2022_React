@@ -86,5 +86,13 @@ const { title, author, price, comp } = book;
 const title=book.title;
 const author=book.author;
 const price =book.price;
-const comp=book.comp;
+const comp=book.comp; 
+*/
+
+const books = ["자바", "오라클", "mysql"];
+const [자바, 오라클, MYSQL] = books;
+/*
+const 자바 =books[0]
+const 오라클=books[1]
+const MYSQL =books[2]
 */
