@@ -8,8 +8,8 @@ const foodSchema = Schema({
   d_id: String,
   d_date: String,
   d_food: String,
-  d_qty: Number,
-  d_cal: Number,
+  d_qty: String,
+  d_cal: String,
 });
 const food_model = mongoose.model("food", foodSchema);
 
